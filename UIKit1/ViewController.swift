@@ -32,5 +32,13 @@ class ViewController: UIViewController {
     @IBAction func changeBoundsToRight(_ sender: Any) {
         self.view.bounds = CGRect(origin: CGPoint(x: 50, y: 100), size: self.view.bounds.size)
     }
+    
+    @IBAction func changeFrame(_ sender: Any) {
+        self.innerView.center.x += 50
+    }
+    
+    @IBAction func layoutInnerView(_ sender: Any) {
+        self.view.setNeedsLayout()
+    }
 }
 

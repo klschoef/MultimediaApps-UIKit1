@@ -24,27 +24,44 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dfU-de-ds6">
-                                <rect key="frame" x="115" y="123" width="184" height="106"/>
+                                <rect key="frame" x="115" y="123" width="209" height="182"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDh-92-djJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="184" height="30"/>
-                                        <state key="normal" title="Change Bounds -100/-200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="209" height="30"/>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Change OV Bounds -100/-200"/>
                                         <connections>
                                             <action selector="changeBounds:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xPM-oy-HqW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGB-TD-BNf">
-                                        <rect key="frame" x="44.5" y="38" width="95" height="30"/>
-                                        <state key="normal" title="Reset Bounds"/>
+                                        <rect key="frame" x="44.5" y="38" width="120" height="30"/>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Reset OV Bounds"/>
                                         <connections>
                                             <action selector="resetBounds:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7sH-5b-RTL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="We2-jH-qMv">
-                                        <rect key="frame" x="11" y="76" width="162" height="30"/>
-                                        <state key="normal" title="Change Bounds 50/100"/>
+                                        <rect key="frame" x="11.5" y="76" width="186" height="30"/>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Change OV Bounds 50/100"/>
                                         <connections>
                                             <action selector="changeBoundsToRight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VgA-E7-PRD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ut6-Ja-5L4">
+                                        <rect key="frame" x="26" y="114" width="157" height="30"/>
+                                        <state key="normal" title="Change IV Frame x+50"/>
+                                        <connections>
+                                            <action selector="changeFrame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bdv-Za-T0k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHA-Q0-Z0M">
+                                        <rect key="frame" x="72.5" y="152" width="64" height="30"/>
+                                        <state key="normal" title="Layout IV"/>
+                                        <connections>
+                                            <action selector="layoutInnerView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6eL-fi-cNE"/>
                                         </connections>
                                     </button>
                                 </subviews>
